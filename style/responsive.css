@@ -12,6 +12,15 @@
         margin-top: 5px;
         width: 300px;
     }
+
+    .popup .popuptext {
+        margin-left: 165px;
+        width: 130px;
+        height: 148px;
+        font-size: 13px;
+    
+    }
+
 }
 
 @media screen and (min-width:1000px){
@@ -19,3 +28,4 @@
         width: 50%;
     }
 }
+

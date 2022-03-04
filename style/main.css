@@ -27,7 +27,7 @@ header .container{
 
 
 header .logo{
-    margin-left: 10px;
+   
     color: var(--laranja);
     font-family: cursive;
     font-size: 27px;
@@ -38,7 +38,7 @@ header .logo{
 header nav a{
     text-decoration: none;
     color:rgb(255, 246, 246);
-    margin-right: 18px;
+    margin-right: 10px;
     transition: .3s ease all;
     font-family: 'Arial';
     font-size: 15px;
@@ -47,6 +47,7 @@ header nav a{
 header nav a:hover{
     color:rgb(145, 145, 145);
 }
+
 
 /*filme principal*/
 .filme-principal{
@@ -128,7 +129,7 @@ header nav a:hover{
 .divisao{
     font-size: 18px;
     font-family: 'Arial';
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .filme-principal .container{
@@ -141,6 +142,73 @@ header nav a:hover{
     display: block;
 }
 
+
 .carrosel-filmes{
     margin-top: 5px;
+    border-color: black;
 }
+
+
+    
+
+
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 300px;
+    height: 160px;
+    background-color: #4d4d4dd2;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    margin-left: 120px;
+    margin-top: -110px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 100%;
+    margin-left: -6px;
+    border-width: 5px;
+    border-style: solid;
+    color: #4d4d4dd2;
+    border-color: rgba(85, 85, 85, 0) transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+
+
+  
