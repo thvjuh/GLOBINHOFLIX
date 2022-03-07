@@ -93,6 +93,34 @@ header nav a:hover{
     background-color: rgb(187, 187, 187);
     color: black;
 }
+
+.botao3{
+    background-color: rgb(255, 255, 255);
+    border:none;
+    color:rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-left: 30px;
+    padding:15px 30px;
+    
+    font-size: 12px;
+
+    cursor: pointer;
+    
+
+    border-radius: 6px;
+}
+
+.botao3:hover{
+    background-color: rgb(187, 187, 187);
+    color: black;
+    transition: .3s ease all;
+}
+
+.botao3 i{
+    margin-right: 8px;
+    font-size: large;
+}
+
 .botao2{
     background-color: rgba(83, 83, 83, 0.788);
     border:none;
@@ -129,7 +157,7 @@ header nav a:hover{
 .divisao{
     font-size: 18px;
     font-family: 'Arial';
-    margin-left: 20px;
+    margin-left: 28px;
 }
 
 .filme-principal .container{
@@ -155,7 +183,7 @@ header nav a:hover{
 
 /* Popup container */
 .popup {
-    position: relative;
+    position: absolute;
     display: inline-block;
     cursor: pointer;
   }
@@ -163,21 +191,90 @@ header nav a:hover{
   /* The actual popup (appears on top) */
   .popup .popuptext {
     visibility: hidden;
-    width: 300px;
-    height: 160px;
-    background-color: #4d4d4dd2;
+    width: 800px;
+    height: 500px;
+    background: linear-gradient(rgba(85, 85, 85, 0.5),rgb(34, 34, 36)100%), url('/img/capa2padrinhos.jpg');
+    background-size: cover; 
     color: #fff;
-    text-align: center;
-    border-radius: 6px;
+    text-align: left;
+    border-radius: 3px;
     padding: 8px 0;
     position: absolute;
     z-index: 1;
     top: 125%;
     left: 50%;
-    margin-left: 120px;
-    margin-top: -110px;
+    margin-left: -50px;
+    margin-top: -420px;
+    font-size: 30px;
   }
   
+  .popup .popuptext h3{
+      font-size: 20px;
+      margin-left: 30px;
+      color: #09e509;
+      margin-bottom: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .popup .popuptext h4{
+      font-size: 20px;
+      margin-left: 30px;
+      margin-top: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: left;
+      color: #dbdbdb;
+  }
+  .popup .popuptext h1{
+      color: #00000000;
+      font-size: 50px;
+  }
+  .popup .popuptext li{
+      font-size: 15px;
+      margin-left: 30px;
+      
+      margin-bottom: 10px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      list-style: none;
+      color: #dbdbdb;
+  }
+
+  /*close*/
+  .popup .popuptext .fa-circle-xmark{
+    font-size: 30px;
+    margin-left: 750px;
+    
+    
+}
+
+.popup .popuptext .fa-circle-xmark:hover{
+    color: rgba(138, 138, 138, 0.856);
+    transition: .3s ease all;
+
+}
+
+  /*like e deslike*/
+  .popup .popuptext .fa-thumbs-up{
+      font-size: 30px;
+      margin-left: 30px;
+  }
+  .popup .popuptext .fa-thumbs-up:hover{
+    color: rgba(59, 128, 255, 0.856);
+    transition: .3s ease all;
+
+  }
+
+  
+  .popup .popuptext .fa-thumbs-down{
+      font-size: 30px;
+      margin-left: 7px;
+     
+  }
+  .popup .popuptext .fa-thumbs-down:hover{
+    color: rgba(255, 83, 83, 0.856);
+    transition: .3s ease all;
+
+     
+  }
+
   /* Popup arrow */
   .popup .popuptext::after {
     content: "";
@@ -210,5 +307,4 @@ header nav a:hover{
   }
 
 
-/*deucerto*/
   
